@@ -3,14 +3,14 @@ import SearchBar from '../ButtonsIcons/SearchBar';
 import './Header.css';
 
 function Header () {
-  return (
-    <header className="header">
-      <div className="cointainer">
+    return (
+        <header className="header">
+            <div className="cointainer">
        
-        <SearchBar />
-      </div>
-    </header>
-  );
+                <SearchBar />
+            </div>
+        </header>
+    );
 }
 
 export default Header;

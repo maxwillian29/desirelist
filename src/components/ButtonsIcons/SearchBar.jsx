@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TbBasketSearch } from 'react-icons/tb';
+
 import './SearchBar.css';
 
 function SearchBar() {
-  return ( 
-    <form className="search-bar">
-      <input 
-        type="search"
-        placeholder="Buscar produtos"
-        className="search-input"
-        required
-      />
-      <button
-        type="submit"
-        className="seach_button">
-        <TbBasketSearch />
-      </button>
-    </form>
 
-  );
+    const [searchValue, setSearcheValue] = useState ('');
+
+    return ( 
+        <form className="search-bar">
+            <input 
+                type="search"
+                placeholder="Buscar produtos"
+                className="search-input"
+                required
+            />
+            searchValue
+            <button type="submit" className="search-button">
+                <TbBasketSearch />
+            </button>
+        </form>
+    );
 }
 
 export default SearchBar;
